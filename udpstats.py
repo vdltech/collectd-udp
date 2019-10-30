@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 
-import subprocess
 import collectd
-import signal
-from pprint import pprint
-
 
 def get_udp_stats():
     result = {}
