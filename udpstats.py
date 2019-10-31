@@ -29,8 +29,8 @@ def get_udp_stats():
                         'drops': 0,
                     }
 
-                result[port]['tx_queue'] += int(tx_queue)
-                result[port]['rx_queue'] += int(rx_queue)
+                result[port]['tx_queue'] += int(tx_queue, 16)
+                result[port]['rx_queue'] += int(rx_queue, 16)
                 result[port]['drops'] += int(drops)
 
     return result
